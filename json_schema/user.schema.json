@@ -1,0 +1,41 @@
+{
+  "title": "User schema definition",
+  "description": "Describes properties required to create a user",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+      "DOB": {
+        "type": "string",
+        "format": "date",
+        "example": "1990–12–28"
+      },
+      "first": {
+        "type": "string",
+        "description": "Firstname of the account user"
+      },
+      "last": {
+        "type": "string",
+        "description": "Lastname of the account user"
+      },
+      "phone": {
+        "type": "number",
+        "minimum": 10,
+        "description": "Phone number length must be 10"
+      }
+    },
+    "required": [
+      "email",
+      "DOB",
+      "first",
+      "last",
+      "phone"
+    ]
+  }
+}

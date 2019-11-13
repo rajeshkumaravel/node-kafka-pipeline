@@ -1,0 +1,40 @@
+{
+  "name": "node-kafka-pipeline",
+  "version": "1.0.0",
+  "description": "Apache Kafka with NodeJS - Pipeline PoC",
+  "main": "index.js",
+  "scripts": {
+    "core": "node src/index.js",
+    "consumer": "node kafka-consumers/index.js",
+    "lint": "eslint . || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeshkumaravel/node-kafka-pipeline.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node-kafka",
+    "node-kafka-pipeline"
+  ],
+  "author": "RAJESH K",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajeshkumaravel/node-kafka-pipeline/issues"
+  },
+  "homepage": "https://github.com/rajeshkumaravel/node-kafka-pipeline#readme",
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "express": "^4.17.1",
+    "forever-monitor": "^1.7.1",
+    "kafka-node": "^4.1.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
